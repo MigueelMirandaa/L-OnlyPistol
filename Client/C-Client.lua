@@ -7,9 +7,12 @@ RegisterCommand('salirffa', function()
 end)
 
 function SalirFFA()
-    if Config.UsingLockserInventory then
+    if Config.Inventory == 'lockser_inventory' then
         exports.lockserinventory:ToggleLockInventory()
+	elseif Config.Inventory == 'ox_inventory' then
+        exports.ox_inventory:weaponWheel(false)
     end
+
     ESX.TriggerServerCallback('ffa:setdimension', function(resultado)
         if resultado then
             ESX.ShowNotification('Has salido correctamente del FFA.')
@@ -22,9 +25,12 @@ function SalirFFA()
 end
 
 function UnirseFFA()
-    if Config.UsingLockserInventory then
+    if Config.Inventory == 'lockser_inventory' then
         exports.lockserinventory:ToggleLockInventory()
-    end
+	elseif Config.Inventory == 'ox_inventory' then
+		exports.ox_inventory:weaponWheel(true)
+	end
+	
     ESX.TriggerServerCallback('ffa:setdimension', function(resultado)
         if resultado then
             ESX.ShowNotification('Te has unido correctamente al FFA.')

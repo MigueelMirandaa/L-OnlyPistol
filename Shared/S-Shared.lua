@@ -19,6 +19,8 @@ Config.RespawnCoords = {
     vector4(-1714.8721, 163.5967, 64.3531, 167.6584),
 }
 
+Config.Inventory = 'ox_inventory' -- "ox_inventory", "lockser_inventory" or "other"
+
 Config.Weapons = {
     "WEAPON_PISTOL_MK2",
     "WEAPON_PISTOL",
@@ -27,4 +29,6 @@ Config.Weapons = {
     "WEAPON_SNSPISTOL",
 }
 
-Config.UsingLockserInventory = true
+-- USE:
+-- exports["L-OnlyPistol"]:UnirseFFA()
+-- to join the FFA

@@ -41,7 +41,7 @@ La configuración se encuentra en Shared/S-Shared.lua :
 - Config.SalidaCoords - Coordenadas de salida al abandonar el FFA
 - Config.RespawnCoords - Array de puntos posibles de reaparición
 - Config.Weapons - Lista de pistolas permitidas
-- Config.UsingLockserInventory - Activar integración con Lockser Inventory
+- Config.Inventory - Activar integración con Lockser Inventory or Ox_Inventory
 
 # Lockser Shop - Social Media & Contact
 ## Official Links
